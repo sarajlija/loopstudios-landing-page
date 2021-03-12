@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+/*MEDIA*/
+
+@media screen and (max-width: 800px) {
+    header nav .icon-menu {
+      display: block;
+      animation: opacity 1s ease forwards backwards;
+      font-size: 35px;
+      color: #f2f2f2;
+      cursor: pointer;
+    }
+
+    header .nav-mobile {
+      opacity: 1;
+      background-color: #181719;
+      position: absolute;
+      margin: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: none;
+      flex-direction: column;
+      height: 100vh;
+    }
+  
+    header .nav-mobile .logo {
+     
+      display: flex;
+      position: absolute;
+      left: 0;
+      top: 15px;
+    }
+  
+    header .nav-mobile ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 14rem;
+      margin-left: 4rem;
+      text-transform: uppercase;
+      font-size: 3.6rem;
+    }
+    header .nav-mobile ul li {
+      list-style: none;
+      width: fit-content;
+    }
+  
+    header .nav-mobile ul li a {
+      font-size: 18px;
+      text-decoration: none;
+      color: #fff;
+    }
+  
+    header .nav-mobile ul li a:hover {
+      /*transition: font-weight 0.3s ease;*/
+      font-weight: 700;
+    }
+  
+    header .nav-mobile .icon-close {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      font-size: 35px;
+      margin: 1.4rem 1rem;
+      cursor: pointer;
+    }
+  
+  
+  h1 {
+      display: block;
+      font-size: 2.8em;
+      width: 60vw;
+      height: auto;
+      border: 1px solid white;
+      position: absolute;
+      color:white;
+      padding: 55px;
+      top: 300px;
+      text-transform: uppercase;
+      left: 45px;
+      overflow: hidden;
+      
+    }
+  
+    body {
+      position: relative;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    header nav ul {
+      display: none;
+    }
+    
+  
+    header nav #menu-open {
+     display:block;
+     position: absolute;
+     right: 2.5rem;
+  
+    }
+  
+    header {
+    margin: 0 auto;
+    margin-left:0;
+    background-image: url(./images/mobile/image-hero.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    height:50rem;
+     
+    }
+    header nav {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    }
+  
+    header nav .logo .box-logo {
+    padding: 5px 0 0 50px;
+    left: 0;
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  header nav .logo .box-logo svg {
+    font-size: 1rem ;
+    }
+    
+    .container {
+    padding: 0;
+  }
+  
+    .container .interactive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    }
+  .container .image {
+    width: 100%;
+    max-width: 90%;
+    margin: 10px auto 10px auto;
+    }
+  .images__grid__mobile {
+    display:grid;
+    grid-gap:10px;
+    margin:0 auto;
+    grid-row: auto;
+    }
+  
+  .images__grid__mobile figure img {
+    width: 90vw;
+  }
+  .container .interactive__title {
+    position: relative;
+    background-color: #fff;
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto;
+     }
+  .container .our-creations {
+    display:none;
+      }
+  
+  .container .our-creations__mobile {
+    display: grid;
+    margin-bottom: 410px;
+      }
+  .container div.see__all__mobile {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    width: 20%;
+    padding: 15px 0;
+    margin-top: 25px;
+  }
+  .container div.see__all__mobile:hover {
+    cursor: pointer;
+    color: #aca7a7;
+
+  }
+  
+  footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 20rem;
+    background-color: #000000;
+  }
+  footer #nav-desktop {
+    display:none;
+  }
+      
+  footer #mobile {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  
+  }
+  
+  footer #mobile ul {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  footer #mobile ul li {
+   
+    list-style: none;
+    margin-left: 0px;
+    align-self: center;
+    padding: 5px 0;
+    
+  }
+footer #mobile .logo span svg:hover{
+   cursor: pointer;
+   fill-opacity: 0.6;
+  }
+   
+footer #mobile ul li:after {
+   content:'';
+    margin:auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+  
+  footer #mobile ul li:hover:after{
+    width:100%; 
+    background:#ffffff;
+  }
+  
+  
+  footer #mobile ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    transition: font-weight 0.3s ease;
+    margin: 0  ;
+  }
+  
+  footer #mobile ul li a:hover {
+    font-weight: 700;
+  }
+  
+  footer #mobile .logo {
+    display: block;
+      justify-content: unset;
+      padding: 0;
+      text-align: center;
+      padding-top:15px;
+  }
+  footer #mobile .social {
+    text-align: center;
+       margin: 30px 0;
+  }
+  
+  footer #mobile span {
+   color:rgb(228, 228, 228);
+    text-align: center;
+       
+  }
+  
+  .attribution {
+    color: #ffffff;
+    position:relative;
+    z-index: 100;
+  
+  }
+}
+  
+  @media screen and (max-width: 500px) {
+    h1 {
+    width: 50vw;
+    font-size: 1.6em;
+    max-width: 375px;
+    padding: 30px 40px;
+    top: 280px;
+  
+    }
+    .heading {
+      padding: 40px;
+      left: 50px;
+      top:200px;
+         
+    }
+    header {
+      height: 100vh;
+  
+    }
+    .container div.see__all__mobile {
+      
+      margin-top: 35px;
+    }
+  }
+  
